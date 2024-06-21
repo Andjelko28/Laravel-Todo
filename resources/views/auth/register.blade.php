@@ -5,8 +5,13 @@
 
     <x-form method="POST" action="/register">
         <x-input label="Email" name="email" type="email"></x-input>
+        @error('email')
+            <p>{{ $message }}</p>
+        @enderror
         <x-input label="Password" name="password" type="password"></x-input>
-        <x-validation-error name="password" />
+        @error('password')
+            <p>{{ $message }}</p>
+        @enderror
         <x-input label="Password Confirmation" name="password_confirmation" type="password"></x-input>
 
         <a href="/login" class="text-deco text-primary">You have account? Login here!</a>
