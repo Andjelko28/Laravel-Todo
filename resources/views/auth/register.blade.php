@@ -9,6 +9,8 @@
         <x-input label="Password" name="password" type="password"></x-input>
         <x-input label="Password Confirmation" name="password_confirmation" type="password"></x-input>
 
+        <a href="/login" class="text-deco text-primary">You have account? Login In here!</a>
+
         <div class="w-50 d-flex justify-content-between">
             <x-button>Sign Up</x-button>
             <x-button class="btn-secondary"><a href="/" class="btn-primary text-deco">Cancel</a></x-button>

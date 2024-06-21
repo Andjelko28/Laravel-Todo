@@ -7,6 +7,8 @@
         <x-input label="Email" name="email" type="email"></x-input>
         <x-input label="Password" name="password" type="password"></x-input>
 
+        <a href="/register" class="text-deco text-primary">You dont have account? Register here!</a>
+
         <div class="w-50 d-flex justify-content-between">
             <x-button>Sign In</x-button>
             <x-button class="btn-secondary"><a href="/" class="btn-primary text-deco">Cancel</a></x-button>
