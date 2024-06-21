@@ -6,9 +6,10 @@ use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TodoController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [TodoController::class, 'index']);
 
 Route::get('/register', [RegisteredUserController::class, 'create']);
+Route::post('register', [RegisteredUserController::class, 'store']);
 
 Route::get('/login', [SessionController::class, 'create']);
 
