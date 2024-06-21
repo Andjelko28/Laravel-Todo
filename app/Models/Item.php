@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Item extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['todo_id', 'name', 'completed'];
+
+
+    public function todo()
+    {
+        return $this->belongsTo(Todo::class);
+    }
 }
